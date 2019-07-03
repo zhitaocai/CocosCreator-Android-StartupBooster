@@ -41,8 +41,8 @@
     },
     "_scale": {
       "__type__": "cc.Vec3",
-      "x": 0.3730524199916173,
-      "y": 0.3730524199916173,
+      "x": 0.2910687011246187,
+      "y": 0.2910687011246187,
       "z": 1
     },
     "_quat": {
@@ -294,9 +294,9 @@
     "_opacity": 255,
     "_color": {
       "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
+      "r": 219,
+      "g": 204,
+      "b": 91,
       "a": 255
     },
     "_contentSize": {
@@ -416,8 +416,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 460.11,
-      "height": 100
+      "width": 486.74,
+      "height": 80
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -459,10 +459,10 @@
     },
     "_enabled": true,
     "_useOriginalSize": false,
-    "_string": "Cocos 场景",
-    "_N$string": "Cocos 场景",
-    "_fontSize": 90,
-    "_lineHeight": 100,
+    "_string": "已进入Cocos 场景",
+    "_N$string": "已进入Cocos 场景",
+    "_fontSize": 60,
+    "_lineHeight": 80,
     "_enableWrapText": true,
     "_N$file": null,
     "_isSystemFontUsed": true,
