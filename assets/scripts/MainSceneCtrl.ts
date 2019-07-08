@@ -6,6 +6,6 @@ export default class MainSceneCtrl extends cc.Component {
 	label: cc.Label = null;
 
 	start() {
-		cc.log("进入主场景");
+		cc.error("进入主场景");
 	}
 }
