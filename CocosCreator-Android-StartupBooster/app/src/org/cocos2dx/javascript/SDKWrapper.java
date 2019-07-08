@@ -76,7 +76,7 @@ public class SDKWrapper {
                 classes.add(sdk);
             }
         } catch (Exception e) {
-            e.printStackTrace();
+//            e.printStackTrace();
         }
         this.sdkClasses = classes;
     }
