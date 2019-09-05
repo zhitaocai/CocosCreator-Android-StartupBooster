@@ -2,34 +2,34 @@
   {
     "__type__": "cc.SpriteFrame",
     "content": {
-      "name": "common_bg_rect_10x10",
-      "texture": "12ffb2630",
+      "name": "splash",
+      "texture": "13fb45235",
       "rect": [
         3,
         3,
-        10,
-        10
+        720,
+        1280
       ],
       "offset": [
         0,
         0
       ],
       "originalSize": [
-        10,
-        10
+        720,
+        1280
       ],
       "capInsets": [
-        2,
-        2,
-        2,
-        2
+        0,
+        0,
+        0,
+        0
       ]
     }
   },
   [
     {
       "__type__": "cc.SceneAsset",
-      "_name": "MainScene",
+      "_name": "ImageSplashScene",
       "scene": {
         "__id__": 1
       },
@@ -48,8 +48,8 @@
       },
       "_scale": {
         "__type__": "cc.Vec3",
-        "x": 0.34375,
-        "y": 0.34375,
+        "x": 0.43720703125,
+        "y": 0.43720703125,
         "z": 1
       },
       "autoReleaseAssets": false
@@ -66,6 +66,9 @@
         },
         {
           "__id__": 4
+        },
+        {
+          "__id__": 5
         }
       ],
       "_components": [
@@ -82,7 +85,7 @@
           "_fitWidth": true
         },
         {
-          "__type__": "1b5321VzKhOTIt+levQrTrh",
+          "__type__": "f9f6a9QkHhPcaXEMAqE4WxO",
           "node": {
             "__id__": 2
           }
@@ -120,14 +123,37 @@
     },
     {
       "__type__": "cc.Node",
+      "_name": "Bg",
+      "_parent": {
+        "__id__": 2
+      },
+      "_level": 1,
+      "_components": [
+        {
+          "__type__": "cc.Sprite",
+          "node": {
+            "__id__": 4
+          },
+          "_spriteFrame": {
+            "__uuid__": "bbbz7DGNlFm63TO45HgoxH"
+          },
+          "_type": 1,
+          "_sizeMode": 0
+        }
+      ],
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 720,
+        "height": 1280
+      }
+    },
+    {
+      "__type__": "cc.Node",
       "_name": "Content",
       "_parent": {
         "__id__": 2
       },
       "_children": [
-        {
-          "__id__": 5
-        },
         {
           "__id__": 6
         }
@@ -137,7 +163,7 @@
         {
           "__type__": "ee105izEf1CdIQoxMLGJXEy",
           "node": {
-            "__id__": 4
+            "__id__": 5
           }
         }
       ],
@@ -149,50 +175,9 @@
     },
     {
       "__type__": "cc.Node",
-      "_name": "Bg",
-      "_parent": {
-        "__id__": 4
-      },
-      "_level": 2,
-      "_components": [
-        {
-          "__type__": "cc.Widget",
-          "node": {
-            "__id__": 5
-          },
-          "_alignFlags": 45,
-          "_originalWidth": 40,
-          "_originalHeight": 36
-        },
-        {
-          "__type__": "cc.Sprite",
-          "node": {
-            "__id__": 5
-          },
-          "_spriteFrame": {
-            "__uuid__": "17zySoDoVBZ48qOSDqr463"
-          },
-          "_type": 1,
-          "_sizeMode": 0
-        }
-      ],
-      "_color": {
-        "__type__": "cc.Color",
-        "r": 218,
-        "g": 128,
-        "b": 32
-      },
-      "_contentSize": {
-        "__type__": "cc.Size",
-        "width": 720,
-        "height": 1280
-      }
-    },
-    {
-      "__type__": "cc.Node",
       "_name": "Label",
       "_parent": {
-        "__id__": 4
+        "__id__": 5
       },
       "_level": 2,
       "_components": [
@@ -202,21 +187,39 @@
             "__id__": 6
           },
           "_useOriginalSize": false,
-          "_string": "已进入Cocos 场景",
-          "_N$string": "已进入Cocos 场景",
-          "_fontSize": 60,
-          "_lineHeight": 80,
+          "_string": "沙滩大作战",
+          "_N$string": "沙滩大作战",
+          "_fontSize": 80,
+          "_lineHeight": 100,
           "_N$horizontalAlign": 1,
           "_N$verticalAlign": 1
+        },
+        {
+          "__type__": "cc.LabelOutline",
+          "node": {
+            "__id__": 6
+          },
+          "_color": {
+            "__type__": "cc.Color",
+            "r": 255,
+            "g": 176,
+            "b": 36
+          },
+          "_width": 4
         }
       ],
       "_color": {
-        "__type__": "cc.Color"
+        "__type__": "cc.Color",
+        "r": 255
       },
       "_contentSize": {
         "__type__": "cc.Size",
-        "width": 486.74,
-        "height": 80
+        "width": 408,
+        "height": 100
+      },
+      "_position": {
+        "__type__": "cc.Vec3",
+        "y": -162
       }
     }
   ]
