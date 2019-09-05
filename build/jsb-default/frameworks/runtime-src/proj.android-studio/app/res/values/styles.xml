@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources >
+	<!--这里为继承 CCC 默认说采用的主题 Theme.NoTitleBar.Fullscreen -->
+	<style name="SplashStyle"
+	       parent="@android:style/Theme.NoTitleBar.Fullscreen" >
+		
+		<!--自定义主题背景为我们刚刚创建的颜色-->
+		<item name="android:windowBackground" >@color/splashBg</item >
+		
+		<!--令主题无标题-->
+		<item name="android:windowNoTitle" >true</item >
+	</style >
+</resources >

@@ -1,0 +1,4 @@
+include ':libcocos2dx'
+project(':libcocos2dx').projectDir = new File('/Applications/CocosCreator_v2.0.10.app/Contents/Resources/cocos2d-x/cocos/platform/android/libcocos2dx')
+include ':CocosCreatorAndroidStartupBooster'
+project(':CocosCreatorAndroidStartupBooster').projectDir = new File(settingsDir, 'app')
