@@ -111,6 +111,16 @@ window.__require = function e(t, n, r) {
       MainSceneCtrl.prototype.onLoad = function() {
         cc.error("\u8fdb\u5165\u4e3b\u573a\u666f");
       };
+      MainSceneCtrl.prototype.start = function() {
+        var _this = this;
+        this.scheduleOnce(function() {
+          _this._hideNativeSplash();
+        }, 1);
+      };
+      MainSceneCtrl.prototype._hideNativeSplash = function() {
+        true;
+        cc.sys.os == cc.sys.OS_ANDROID && jsb.reflection.callStaticMethod("org/cocos2dx/javascript/AppActivity", "hideSplash", "()V");
+      };
       MainSceneCtrl = __decorate([ ccclass ], MainSceneCtrl);
       return MainSceneCtrl;
     }(cc.Component);
