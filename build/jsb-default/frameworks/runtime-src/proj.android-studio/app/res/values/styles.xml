@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources >
-	<!--这里为继承 CCC 默认说采用的主题 Theme.NoTitleBar.Fullscreen -->
+	<!--这里为继承 CCC 的默认主题 Theme.NoTitleBar.Fullscreen -->
 	
 	<!--纯色背景主题-->
 	<style name="BgSplashStyle"
@@ -16,5 +16,11 @@
 	<style name="ImageSplashStyle"
 	       parent="@android:style/Theme.NoTitleBar.Fullscreen" >
 		<item name="android:windowBackground" >@drawable/splash</item >
+	</style >
+	
+	<!-- Slogan + 背景主题 -->
+	<style name="SloganSplashStyle"
+	       parent="@android:style/Theme.NoTitleBar.Fullscreen" >
+		<item name="android:windowBackground" >@drawable/splash_slogan_with_bg</item >
 	</style >
 </resources >

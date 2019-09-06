@@ -191,5 +191,73 @@ window.__require = function e(t, n, r) {
     }(cc.Component);
     exports.default = ImageSplashSceneCtrl;
     cc._RF.pop();
+  }, {} ],
+  SloganSplashSceneCtrl: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "b2f8c/BVKVO0JGZBDHOt+I8", "SloganSplashSceneCtrl");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = Object.setPrototypeOf || {
+        __proto__: []
+      } instanceof Array && function(d, b) {
+        d.__proto__ = b;
+      } || function(d, b) {
+        for (var p in b) b.hasOwnProperty(p) && (d[p] = b[p]);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var SloganSplashSceneCtrl = function(_super) {
+      __extends(SloganSplashSceneCtrl, _super);
+      function SloganSplashSceneCtrl() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.titleLabel = null;
+        _this.progressBar = null;
+        _this.isStartLoaded = false;
+        return _this;
+      }
+      SloganSplashSceneCtrl.prototype.start = function() {
+        var _this = this;
+        this.progressBar.progress = 0;
+        this.scheduleOnce(function() {
+          _this._hideNativeSplash();
+          _this._simulateLoading();
+          _this._playTitleAnim();
+        }, 1);
+      };
+      SloganSplashSceneCtrl.prototype._hideNativeSplash = function() {
+        true;
+        cc.sys.os == cc.sys.OS_ANDROID && jsb.reflection.callStaticMethod("org/cocos2dx/javascript/SloganSplashActivity", "hideSplash", "()V");
+      };
+      SloganSplashSceneCtrl.prototype._playTitleAnim = function() {
+        this.titleLabel.node.runAction(cc.repeatForever(cc.sequence(cc.scaleTo(.8, 1.2).easing(cc.easeCircleActionOut()), cc.scaleTo(.8, 1).easing(cc.easeCircleActionIn()))));
+      };
+      SloganSplashSceneCtrl.prototype._simulateLoading = function() {
+        this.isStartLoaded = true;
+      };
+      SloganSplashSceneCtrl.prototype.update = function(dt) {
+        this.isStartLoaded && this.progressBar.progress <= 1 && (this.progressBar.progress += .002);
+      };
+      __decorate([ property(cc.Label) ], SloganSplashSceneCtrl.prototype, "titleLabel", void 0);
+      __decorate([ property(cc.ProgressBar) ], SloganSplashSceneCtrl.prototype, "progressBar", void 0);
+      SloganSplashSceneCtrl = __decorate([ ccclass ], SloganSplashSceneCtrl);
+      return SloganSplashSceneCtrl;
+    }(cc.Component);
+    exports.default = SloganSplashSceneCtrl;
+    cc._RF.pop();
   }, {} ]
-}, {}, [ "BgSplashSceneCtrl", "ImageSplashSceneCtrl", "BackgroundAdapter", "ContentAdapter" ]);
+}, {}, [ "BgSplashSceneCtrl", "ImageSplashSceneCtrl", "SloganSplashSceneCtrl", "BackgroundAdapter", "ContentAdapter" ]);

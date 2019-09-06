@@ -2,6 +2,34 @@
   {
     "__type__": "cc.SpriteFrame",
     "content": {
+      "name": "XX Studio",
+      "texture": "190dd0ebb",
+      "rect": [
+        3,
+        1289,
+        400,
+        142
+      ],
+      "offset": [
+        0,
+        15.5
+      ],
+      "originalSize": [
+        400,
+        173
+      ],
+      "rotated": 1,
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
       "name": "default_progressbar",
       "texture": "cf73jxyN9Jt47QTJU6ziYh",
       "rect": [
@@ -26,64 +54,10 @@
       ]
     }
   },
-  {
-    "__type__": "cc.SpriteFrame",
-    "content": {
-      "name": "default_progressbar_bg",
-      "texture": "99FwsL0hBG8bITfZ4/IwmK",
-      "rect": [
-        0,
-        0,
-        60,
-        15
-      ],
-      "offset": [
-        0,
-        0
-      ],
-      "originalSize": [
-        60,
-        15
-      ],
-      "capInsets": [
-        10,
-        4,
-        10,
-        4
-      ]
-    }
-  },
-  {
-    "__type__": "cc.SpriteFrame",
-    "content": {
-      "name": "splash",
-      "texture": "190dd0ebb",
-      "rect": [
-        3,
-        3,
-        720,
-        1280
-      ],
-      "offset": [
-        0,
-        0
-      ],
-      "originalSize": [
-        720,
-        1280
-      ],
-      "capInsets": [
-        0,
-        0,
-        0,
-        0
-      ]
-    }
-  },
   [
     {
       "__type__": "cc.SceneAsset",
-      "_name": "ImageSplashScene",
+      "_name": "SloganSplashScene",
       "scene": {
         "__id__": 1
       },
@@ -102,8 +76,8 @@
       },
       "_scale": {
         "__type__": "cc.Vec3",
-        "x": 0.24646105825272008,
-        "y": 0.24646105825272008,
+        "x": 0.34375,
+        "y": 0.34375,
         "z": 1
       },
       "autoReleaseAssets": false
@@ -139,7 +113,7 @@
           "_fitWidth": true
         },
         {
-          "__type__": "f9f6a9QkHhPcaXEMAqE4WxO",
+          "__type__": "b2f8c/BVKVO0JGZBDHOt+I8",
           "node": {
             "__id__": 2
           },
@@ -222,6 +196,9 @@
         },
         {
           "__id__": 9
+        },
+        {
+          "__id__": 13
         }
       ],
       "_level": 1,
@@ -426,6 +403,107 @@
         "__id__": 11
       },
       "_N$progress": 0.5
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "Slogan",
+      "_parent": {
+        "__id__": 5
+      },
+      "_level": 2,
+      "_components": [
+        {
+          "__type__": "cc.Sprite",
+          "node": {
+            "__id__": 13
+          },
+          "_spriteFrame": {
+            "__uuid__": "1etFfidmVNbINQPA+t0vum"
+          }
+        },
+        {
+          "__type__": "cc.Widget",
+          "node": {
+            "__id__": 13
+          },
+          "_alignFlags": 9,
+          "_left": 32,
+          "_top": 32,
+          "_bottom": 0.05,
+          "_isAbsBottom": false,
+          "_originalHeight": 142
+        }
+      ],
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 400,
+        "height": 142
+      },
+      "_position": {
+        "__type__": "cc.Vec3",
+        "x": -228,
+        "y": 572.5
+      },
+      "_scale": {
+        "__type__": "cc.Vec3",
+        "x": 0.5,
+        "y": 0.5,
+        "z": 1
+      }
     }
-  ]
+  ],
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "default_progressbar_bg",
+      "texture": "99FwsL0hBG8bITfZ4/IwmK",
+      "rect": [
+        0,
+        0,
+        60,
+        15
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        60,
+        15
+      ],
+      "capInsets": [
+        10,
+        4,
+        10,
+        4
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "splash",
+      "texture": "190dd0ebb",
+      "rect": [
+        3,
+        3,
+        720,
+        1280
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        720,
+        1280
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  }
 ]
