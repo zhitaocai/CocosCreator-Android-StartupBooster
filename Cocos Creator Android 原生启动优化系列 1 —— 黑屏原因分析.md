@@ -6,29 +6,29 @@
 
 ## 2. 前言
 
-Cocos Creator 的打包出来的原生项目（即便是一个空白项目），都会出现打开应用后， **「黑屏」** 一段时间然后才能进入到场景的问题，视乎机型与Android系统版本，这个**「黑屏」**时长可能会持续不同时间，但是实际测试这个持续最短可能也要1~2秒，嗯，在我看来，这基本是完全不可用，因此我们需要优化改进
+Cocos Creator 的打包出来的原生项目（即便是一个空白项目），都会出现打开应用后， **「黑屏」** 一段时间然后才能进入到场景的问题，视乎机型与Android系统版本，这个 **「黑屏」** 时长可能会持续不同时间，但是实际测试这个持续最短可能也要1~2秒，嗯，在我看来，这基本是完全不可用，因此我们需要优化改进
 
 ## 3. 「黑屏」原因
 
 Cocos Creator 打包出来的 Android 项目，主 Activity 都是 AppActivity，无其他特殊修改外时，入口都是从 `AppActivity#onCreate` 方法中，但是因为 AppActivity 是继承 Cocos2dxActivity ，因此实际的主入口在 Cocos2dxActivity 的 onCreate 方法中，即对应下面的 `super.onCreate(savedInstanceState);`
 
-![AppActivity#onCreate](static/AppActivity_onCreate.png)
+![AppActivity#onCreate](static/chapter_1_3_AppActivity_onCreate.png)
 
 而在阅读 `Cocos2dxActivity#onCreate` 方法实现之后，可以大致得出这个方法执行的逻辑：
 
-![Cocos2dxActivity#onCreate](static/Cocos2dxActivity_onCreate_1.png)
+![Cocos2dxActivity#onCreate](static/chapter_1_3_Cocos2dxActivity_onCreate_1.png)
 
 从上图可知，整个 `Cocos2dxActivity#onCreate` 方法执行了很多初始化逻辑，那么究竟是哪里耗时比较严重呢？我们为每个关键行都打一下Log：
 
-![Cocos2dxActivity#onCreate Cost Time](static/Cocos2dxActivity_onCreate_2.png)
+![Cocos2dxActivity#onCreate Cost Time](static/chapter_1_3_Cocos2dxActivity_onCreate_2.png)
 
 从上图可以看到，几个耗时重灾区
 
-| 操作 | 执行代码 | 作用 | 耗时 |
-| --- | --- | --- | --- |
-| 4->5 | onLoadNativeLitraries() | 加载.so | 41ms |
-| 6->7 | Cocos2dxHelper.init() |  | 196ms |
-| 9->10 | this.init() | setContentView | 139ms |
+| 操作  | 执行代码                | 作用           | 耗时  |
+| ----- | ----------------------- | -------------- | ----- |
+| 4->5  | onLoadNativeLitraries() | 加载 so 文件   | 41ms  |
+| 6->7  | Cocos2dxHelper.init()   |                | 196ms |
+| 9->10 | this.init()             | setContentView | 139ms |
 
 可以看到 `onCreate` 整个生命周期中，这几行代码占据了大量时间，而  onCreate 是执行在UI线程上，所以这里是卡死的。
 
@@ -42,7 +42,7 @@ Android 中 Activity 的布局一般是在 `setContentView` 方法之后才会�
 
 在仔细阅读下面 `this.init()` 方法后
 
-![this.init()](static/this.init().png)
+![this.init()](static/chapter_1_3_this.init().png)
 
 可以返现这里面的 `setContentView` 此时并没有设置任何有颜色的组件，因此还是会黑屏，而这就是 **「黑屏」的第二阶段** 
 
@@ -50,7 +50,7 @@ Android 中 Activity 的布局一般是在 `setContentView` 方法之后才会�
 
 但其实到这里距离黑屏结束也快了，因为这之后就是加载我们的场景了，但是加载场景是需要一定时间的，比较典型的就是 `main.js` 中的加载场景代码
 
-![main.js loadScene](static/loadmainjs.png)
+![main.js loadScene](static/chapter_1_3_load_mainjs.png)
 
 视乎我们场景的复杂度，越复杂的场景，加载越久，而这期间，还是黑屏，这就是  **「黑屏」的第三阶段**
 
