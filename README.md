@@ -5,5 +5,5 @@
 
 ## 系列文章
 
-1. [Cocos Creator Android 原生启动优化系列 1 —— 黑屏原因分析](./Cocos Creator Android 原生启动优化系列 1 —— 黑屏原因分析.md)
-2. [Cocos Creator Android 原生启动优化系列 2 —— 自定义启动页](./Cocos Creator Android 原生启动优化系列 2 —— 自定义启动页.md)
+1. [Chapter_1_黑屏原因分析](Chapter_1_黑屏原因分析.md)
+2. [Chapter_2_自定义启动页](Chapter_2_自定义启动页.md)
