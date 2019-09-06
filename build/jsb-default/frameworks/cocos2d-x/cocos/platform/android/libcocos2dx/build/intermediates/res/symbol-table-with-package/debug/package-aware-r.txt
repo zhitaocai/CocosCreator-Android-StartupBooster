@@ -1,6 +1,0 @@
-org.cocos2dx.lib
-string done
-string go
-string next
-string search
-string send
