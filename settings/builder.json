@@ -16,7 +16,7 @@
   },
   "encryptJs": false,
   "excludeScenes": [
-    "8f8c5f33-68c0-42f0-a36a-261412f9fc08"
+    "c69fb885-bd64-4d03-ae27-92b45801acb5"
   ],
   "fb-instant-games": {},
   "includeSDKBox": false,
@@ -37,7 +37,7 @@
     "orientation": "portrait",
     "zip": false
   },
-  "startScene": "c69fb885-bd64-4d03-ae27-92b45801acb5",
+  "startScene": "8f8c5f33-68c0-42f0-a36a-261412f9fc08",
   "title": "CocosCreatorAndroidStartupBooster",
   "webOrientation": "auto",
   "wechatgame": {

@@ -8,6 +8,8 @@
 		
 		<!--自定义主题背景为我们刚刚创建的颜色-->
 		<item name="android:windowBackground" >@color/splash_bg</item >
+		<!--<item name="android:windowTranslucentNavigation" >true</item >-->
+		<!--<item name="android:windowTranslucentStatus" >true</item >-->
 	</style >
 	
 	<!-- 图片背景主题 -->

@@ -91,7 +91,7 @@ window.__require = function e(t, n, r) {
       };
       BgSplashSceneCtrl.prototype._hideNativeSplash = function() {
         true;
-        cc.sys.os == cc.sys.OS_ANDROID && jsb.reflection.callStaticMethod("org/cocos2dx/javascript/AppActivity", "hideSplash", "()V");
+        cc.sys.os == cc.sys.OS_ANDROID && jsb.reflection.callStaticMethod("org/cocos2dx/javascript/BgSplashActivity", "hideSplash", "()V");
       };
       BgSplashSceneCtrl = __decorate([ ccclass ], BgSplashSceneCtrl);
       return BgSplashSceneCtrl;

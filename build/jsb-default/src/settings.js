@@ -11,17 +11,17 @@ window._CCSettings = {
     rawAssets: {
         assets: {}
     },
-    launchScene: "db://assets/scenes/ImageSplashScene.fire",
+    launchScene: "db://assets/scenes/BgSplashScene.fire",
     scenes: [
         {
-            url: "db://assets/scenes/ImageSplashScene.fire",
-            uuid: "c6n7iFvWRNA64nkrRYAay1"
+            url: "db://assets/scenes/BgSplashScene.fire",
+            uuid: "8fjF8zaMBC8KNqJhQS+fwI"
         }
     ],
     packedAssets: {
-        "0ae7b2e0f": [
-            "bbbz7DGNlFm63TO45HgoxH",
-            "c6n7iFvWRNA64nkrRYAay1"
+        "05372a573": [
+            "17zySoDoVBZ48qOSDqr463",
+            "8fjF8zaMBC8KNqJhQS+fwI"
         ]
     },
     md5AssetsMap: {},
