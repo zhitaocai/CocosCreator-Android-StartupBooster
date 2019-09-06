@@ -36,7 +36,7 @@ import org.cocos2d.CocosCreatorAndroidStartupBooster.R;
 import org.cocos2dx.lib.Cocos2dxActivity;
 import org.cocos2dx.lib.Cocos2dxGLSurfaceView;
 
-public class AppActivity extends Cocos2dxActivity {
+public class ImageSplashActivity extends Cocos2dxActivity {
 	
 	private static Cocos2dxActivity sCocos2dxActivity;
 	
@@ -44,7 +44,7 @@ public class AppActivity extends Cocos2dxActivity {
 	
 	private static void showSplash() {
 		sSplashBgImageView = new ImageView(sCocos2dxActivity);
-		sSplashBgImageView.setBackgroundColor(sCocos2dxActivity.getResources().getColor(R.color.splashBg));
+		sSplashBgImageView.setImageResource(R.drawable.splash);
 		sSplashBgImageView.setScaleType(ImageView.ScaleType.FIT_XY);
 		sCocos2dxActivity.addContentView(sSplashBgImageView,
 				new WindowManager.LayoutParams(FrameLayout.LayoutParams.MATCH_PARENT,

@@ -3,10 +3,10 @@
     "__type__": "cc.SpriteFrame",
     "content": {
       "name": "common_bg_rect_10x10",
-      "texture": "12ffb2630",
+      "texture": "190dd0ebb",
       "rect": [
         3,
-        3,
+        1695,
         10,
         10
       ],
@@ -29,7 +29,7 @@
   [
     {
       "__type__": "cc.SceneAsset",
-      "_name": "MainScene",
+      "_name": "BgSplashScene",
       "scene": {
         "__id__": 1
       },
