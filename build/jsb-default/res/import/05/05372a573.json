@@ -3,10 +3,10 @@
     "__type__": "cc.SpriteFrame",
     "content": {
       "name": "common_bg_rect_10x10",
-      "texture": "12ffb2630",
+      "texture": "176b2841f",
       "rect": [
         3,
-        3,
+        1289,
         10,
         10
       ],

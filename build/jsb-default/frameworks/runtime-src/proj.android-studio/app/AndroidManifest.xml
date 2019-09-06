@@ -21,27 +21,8 @@
 			android:value="cocos2djs" />
 		
 		<!-- 纯色背景主题的 Activity -->
-		<activity
-			android:name="org.cocos2dx.javascript.BgSplashActivity"
-			android:configChanges="orientation|keyboardHidden|screenSize"
-			android:label="@string/app_name"
-			android:launchMode="singleTask"
-			android:screenOrientation="portrait"
-			android:taskAffinity=""
-			android:theme="@style/BgSplashStyle"
-			android:usesCleartextTraffic="true"
-			tools:targetApi="m" >
-			<intent-filter >
-				<action android:name="android.intent.action.MAIN" />
-				<action android:name="android.intent.action.VIEW" />
-				
-				<category android:name="android.intent.category.LAUNCHER" />
-			</intent-filter >
-		</activity >
-		
-		<!-- 图片背景主题的 Activity -->
 		<!--<activity-->
-		<!--android:name="org.cocos2dx.javascript.ImageSplashActivity"-->
+		<!--android:name="org.cocos2dx.javascript.BgSplashActivity"-->
 		<!--android:configChanges="orientation|keyboardHidden|screenSize"-->
 		<!--android:label="@string/app_name"-->
 		<!--android:launchMode="singleTask"-->
@@ -57,6 +38,25 @@
 		<!--<category android:name="android.intent.category.LAUNCHER" />-->
 		<!--</intent-filter >-->
 		<!--</activity >-->
+		
+		<!-- 图片背景主题的 Activity -->
+		<activity
+			android:name="org.cocos2dx.javascript.ImageSplashActivity"
+			android:configChanges="orientation|keyboardHidden|screenSize"
+			android:label="@string/app_name"
+			android:launchMode="singleTask"
+			android:screenOrientation="portrait"
+			android:taskAffinity=""
+			android:theme="@style/ImageSplashStyle"
+			android:usesCleartextTraffic="true"
+			tools:targetApi="m" >
+			<intent-filter >
+				<action android:name="android.intent.action.MAIN" />
+				<action android:name="android.intent.action.VIEW" />
+				
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter >
+		</activity >
 	</application >
 
 </manifest >

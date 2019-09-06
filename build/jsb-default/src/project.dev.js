@@ -156,18 +156,36 @@ window.__require = function e(t, n, r) {
     var ImageSplashSceneCtrl = function(_super) {
       __extends(ImageSplashSceneCtrl, _super);
       function ImageSplashSceneCtrl() {
-        return null !== _super && _super.apply(this, arguments) || this;
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.titleLabel = null;
+        _this.progressBar = null;
+        _this.isStartLoaded = false;
+        return _this;
       }
       ImageSplashSceneCtrl.prototype.start = function() {
         var _this = this;
+        this.progressBar.progress = 0;
         this.scheduleOnce(function() {
           _this._hideNativeSplash();
+          _this._simulateLoading();
+          _this._playTitleAnim();
         }, 1);
       };
       ImageSplashSceneCtrl.prototype._hideNativeSplash = function() {
         true;
-        cc.sys.os == cc.sys.OS_ANDROID && jsb.reflection.callStaticMethod("org/cocos2dx/javascript/AppActivity", "hideSplash", "()V");
+        cc.sys.os == cc.sys.OS_ANDROID && jsb.reflection.callStaticMethod("org/cocos2dx/javascript/ImageSplashActivity", "hideSplash", "()V");
       };
+      ImageSplashSceneCtrl.prototype._playTitleAnim = function() {
+        this.titleLabel.node.runAction(cc.repeatForever(cc.sequence(cc.scaleTo(.8, 1.2).easing(cc.easeCircleActionOut()), cc.scaleTo(.8, 1).easing(cc.easeCircleActionIn()))));
+      };
+      ImageSplashSceneCtrl.prototype._simulateLoading = function() {
+        this.isStartLoaded = true;
+      };
+      ImageSplashSceneCtrl.prototype.update = function(dt) {
+        this.isStartLoaded && this.progressBar.progress <= 1 && (this.progressBar.progress += .002);
+      };
+      __decorate([ property(cc.Label) ], ImageSplashSceneCtrl.prototype, "titleLabel", void 0);
+      __decorate([ property(cc.ProgressBar) ], ImageSplashSceneCtrl.prototype, "progressBar", void 0);
       ImageSplashSceneCtrl = __decorate([ ccclass ], ImageSplashSceneCtrl);
       return ImageSplashSceneCtrl;
     }(cc.Component);

@@ -1,0 +1,431 @@
+[
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "default_progressbar",
+      "texture": "cf73jxyN9Jt47QTJU6ziYh",
+      "rect": [
+        0,
+        0,
+        30,
+        15
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        30,
+        15
+      ],
+      "capInsets": [
+        10,
+        4,
+        10,
+        4
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "default_progressbar_bg",
+      "texture": "99FwsL0hBG8bITfZ4/IwmK",
+      "rect": [
+        0,
+        0,
+        60,
+        15
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        60,
+        15
+      ],
+      "capInsets": [
+        10,
+        4,
+        10,
+        4
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "splash",
+      "texture": "176b2841f",
+      "rect": [
+        3,
+        3,
+        720,
+        1280
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        720,
+        1280
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  [
+    {
+      "__type__": "cc.SceneAsset",
+      "_name": "ImageSplashScene",
+      "scene": {
+        "__id__": 1
+      },
+      "asyncLoadAssets": null
+    },
+    {
+      "__type__": "cc.Scene",
+      "_name": "New Node",
+      "_children": [
+        {
+          "__id__": 2
+        }
+      ],
+      "_anchorPoint": {
+        "__type__": "cc.Vec2"
+      },
+      "_scale": {
+        "__type__": "cc.Vec3",
+        "x": 0.24646105825272008,
+        "y": 0.24646105825272008,
+        "z": 1
+      },
+      "autoReleaseAssets": false
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "Canvas",
+      "_parent": {
+        "__id__": 1
+      },
+      "_children": [
+        {
+          "__id__": 3
+        },
+        {
+          "__id__": 4
+        },
+        {
+          "__id__": 5
+        }
+      ],
+      "_components": [
+        {
+          "__type__": "cc.Canvas",
+          "node": {
+            "__id__": 2
+          },
+          "_designResolution": {
+            "__type__": "cc.Size",
+            "width": 720,
+            "height": 1280
+          },
+          "_fitWidth": true
+        },
+        {
+          "__type__": "f9f6a9QkHhPcaXEMAqE4WxO",
+          "node": {
+            "__id__": 2
+          },
+          "titleLabel": {
+            "__id__": 7
+          },
+          "progressBar": {
+            "__id__": 12
+          }
+        }
+      ],
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 720,
+        "height": 1280
+      },
+      "_position": {
+        "__type__": "cc.Vec3",
+        "x": 360,
+        "y": 640
+      },
+      "_id": "4d9QQZ/T9C/LB3/57OwwdY"
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "Main Camera",
+      "_parent": {
+        "__id__": 2
+      },
+      "_level": 1,
+      "_components": [
+        {
+          "__type__": "cc.Camera",
+          "node": {
+            "__id__": 3
+          },
+          "_clearFlags": 7,
+          "_depth": -1
+        }
+      ]
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "Bg",
+      "_parent": {
+        "__id__": 2
+      },
+      "_level": 1,
+      "_components": [
+        {
+          "__type__": "cc.Sprite",
+          "node": {
+            "__id__": 4
+          },
+          "_spriteFrame": {
+            "__uuid__": "bbbz7DGNlFm63TO45HgoxH"
+          },
+          "_type": 1,
+          "_sizeMode": 0
+        }
+      ],
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 720,
+        "height": 1280
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "Content",
+      "_parent": {
+        "__id__": 2
+      },
+      "_children": [
+        {
+          "__id__": 6
+        },
+        {
+          "__id__": 8
+        },
+        {
+          "__id__": 9
+        }
+      ],
+      "_level": 1,
+      "_components": [
+        {
+          "__type__": "ee105izEf1CdIQoxMLGJXEy",
+          "node": {
+            "__id__": 5
+          }
+        }
+      ],
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 720,
+        "height": 1280
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "TitleLabel",
+      "_parent": {
+        "__id__": 5
+      },
+      "_level": 2,
+      "_components": [
+        {
+          "__id__": 7
+        },
+        {
+          "__type__": "cc.LabelOutline",
+          "node": {
+            "__id__": 6
+          },
+          "_color": {
+            "__type__": "cc.Color",
+            "r": 255,
+            "g": 176,
+            "b": 36
+          },
+          "_width": 4
+        }
+      ],
+      "_color": {
+        "__type__": "cc.Color",
+        "r": 255
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 408,
+        "height": 100
+      },
+      "_position": {
+        "__type__": "cc.Vec3",
+        "y": -99
+      }
+    },
+    {
+      "__type__": "cc.Label",
+      "node": {
+        "__id__": 6
+      },
+      "_useOriginalSize": false,
+      "_string": "沙滩大作战",
+      "_N$string": "沙滩大作战",
+      "_fontSize": 80,
+      "_lineHeight": 100,
+      "_N$horizontalAlign": 1,
+      "_N$verticalAlign": 1
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "ProgressLabel",
+      "_parent": {
+        "__id__": 5
+      },
+      "_level": 2,
+      "_components": [
+        {
+          "__type__": "cc.Label",
+          "node": {
+            "__id__": 8
+          },
+          "_useOriginalSize": false,
+          "_string": "已进入场景，假装在加载",
+          "_N$string": "已进入场景，假装在加载",
+          "_N$horizontalAlign": 1,
+          "_N$verticalAlign": 1
+        },
+        {
+          "__type__": "cc.LabelOutline",
+          "node": {
+            "__id__": 8
+          },
+          "_color": {
+            "__type__": "cc.Color",
+            "r": 208,
+            "g": 255,
+            "b": 87
+          },
+          "_width": 5
+        }
+      ],
+      "_color": {
+        "__type__": "cc.Color",
+        "r": 255
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 450,
+        "height": 40
+      },
+      "_position": {
+        "__type__": "cc.Vec3",
+        "y": -297
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "Progressbar",
+      "_parent": {
+        "__id__": 5
+      },
+      "_children": [
+        {
+          "__id__": 10
+        }
+      ],
+      "_level": 2,
+      "_components": [
+        {
+          "__type__": "cc.Sprite",
+          "node": {
+            "__id__": 9
+          },
+          "_spriteFrame": {
+            "__uuid__": "8855/VlrRKd6H0MSRnFxAU"
+          },
+          "_type": 1,
+          "_sizeMode": 0
+        },
+        {
+          "__id__": 12
+        }
+      ],
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 300,
+        "height": 15
+      },
+      "_position": {
+        "__type__": "cc.Vec3",
+        "y": -254
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "bar",
+      "_parent": {
+        "__id__": 9
+      },
+      "_components": [
+        {
+          "__id__": 11
+        }
+      ],
+      "_color": {
+        "__type__": "cc.Color",
+        "r": 255
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 150,
+        "height": 15
+      },
+      "_anchorPoint": {
+        "__type__": "cc.Vec2",
+        "y": 0.5
+      },
+      "_position": {
+        "__type__": "cc.Vec3",
+        "x": -150
+      }
+    },
+    {
+      "__type__": "cc.Sprite",
+      "node": {
+        "__id__": 10
+      },
+      "_spriteFrame": {
+        "__uuid__": "675ovJ2tVK2aLYfgPUWOMv"
+      },
+      "_type": 1,
+      "_sizeMode": 0
+    },
+    {
+      "__type__": "cc.ProgressBar",
+      "node": {
+        "__id__": 9
+      },
+      "_N$totalLength": 300,
+      "_N$barSprite": {
+        "__id__": 11
+      },
+      "_N$progress": 0.5
+    }
+  ]
+]
