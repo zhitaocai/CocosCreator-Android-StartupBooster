@@ -51,15 +51,16 @@
 				"iOS",
 				"HTML5"
 			],
-			"package_download_url": "https://download.cocos.com/CocosServices/plugins/service-matchvs/1.0.9_3.7.9.9.zip",
-			"package_version_desc": "<p><strong>更新日期：</strong> 2019/07/18\n<strong>更新内容：</strong>\n1、修复多节点登录返回值错误\n2、修复FaceBook平台受限安全策略的问题</p>",
+			"package_download_url": "https://download.cocos.com/CocosServices/plugins/service-matchvs/1.0.10_3.7.9.10.zip",
+			"package_version_desc": "<p><strong>更新日期：</strong> 2019/9/12\n<strong>更新内容：</strong>\n1.多语言支持\n2.SDK日常更新</p>",
 			"service_component_name": "service-matchvs",
 			"package_versions": [
 				"1.0.9_3.7.9.9",
 				"1.0.7_3.7.9.6",
 				"1.0.6_3.7.9.2",
 				"1.0.5_3.7.7.3",
-				"1.0.3_3.7.6.4"
+				"1.0.3_3.7.6.4",
+				"1.0.10_3.7.9.10"
 			],
 			"build_platform": [],
 			"require_verify": 0,
@@ -91,7 +92,7 @@
 			],
 			"build_platform": [],
 			"require_verify": 1,
-			"service_price": "该服务按使用量计费，<a href='https://docs.agora.io/cn/Agora Platform/billing_faq?platform=All Platforms'><font color='#dddddd'>计费规则</font></a>，所产生的费用将由第三方从您的 <a href='https://account.cocos.com/#/finance/finance_list'><font color='#dddddd'>Cocos 账户余额</font></a> 中扣除。",
+			"service_price": "该服务按使用量计费，<a href='https://www.agora.io/cn/price/'><font color='#dddddd'>计费规则</font></a>，所产生的费用将由第三方从您的 <a href='https://account.cocos.com/#/finance/finance_list'><font color='#dddddd'>Cocos 账户余额</font></a> 中扣除。",
 			"service_protocol": "游戏首次开启该服务时，Cocos会后台通知服务方为游戏开通服务并初始化参数，服务方根据需要可能会获取您的Cocos账户信息，包括账户基本资料、游戏基本资料、账户余额等，点击确认开通按钮即视为您同意该服务访问您的账户信息，详见<a href='http://auth.cocos.com/CocosServiceAgreement.html'>《Cocos用户服务协议》</a>和<a href='http://auth.cocos.com/PrivacyPolicy.html'>《Cocos隐私政策》</a>"
 		}
 	],

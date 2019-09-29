@@ -18,9 +18,15 @@
 		<item name="android:windowBackground" >@drawable/splash</item >
 	</style >
 	
-	<!-- Slogan + 背景主题 -->
+	<!-- Slogan + 纯色背景主题 -->
 	<style name="SloganSplashStyle"
 	       parent="@android:style/Theme.NoTitleBar.Fullscreen" >
 		<item name="android:windowBackground" >@drawable/splash_slogan_with_bg</item >
+	</style >
+	
+	<!-- 渐变色背景主题 -->
+	<style name="GradientBgSplashStyle"
+	       parent="@android:style/Theme.NoTitleBar.Fullscreen" >
+		<item name="android:windowBackground" >@drawable/splash_gradient_bg</item >
 	</style >
 </resources >
