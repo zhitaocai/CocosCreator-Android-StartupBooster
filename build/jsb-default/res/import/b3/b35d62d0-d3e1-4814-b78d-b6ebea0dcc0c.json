@@ -1,0 +1,197 @@
+[
+  {
+    "__type__": "cc.SceneAsset",
+    "_name": "GradientBgSplashScene",
+    "scene": {
+      "__id__": 1
+    },
+    "asyncLoadAssets": null
+  },
+  {
+    "__type__": "cc.Scene",
+    "_name": "New Node",
+    "_children": [
+      {
+        "__id__": 2
+      }
+    ],
+    "_anchorPoint": {
+      "__type__": "cc.Vec2"
+    },
+    "_scale": {
+      "__type__": "cc.Vec3",
+      "x": 0.34375,
+      "y": 0.34375,
+      "z": 1
+    },
+    "autoReleaseAssets": false
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Canvas",
+    "_parent": {
+      "__id__": 1
+    },
+    "_children": [
+      {
+        "__id__": 3
+      },
+      {
+        "__id__": 4
+      }
+    ],
+    "_components": [
+      {
+        "__type__": "cc.Canvas",
+        "node": {
+          "__id__": 2
+        },
+        "_designResolution": {
+          "__type__": "cc.Size",
+          "width": 720,
+          "height": 1280
+        },
+        "_fitWidth": true
+      },
+      {
+        "__type__": "87a06WCortNdLFsI+MKQcgJ",
+        "node": {
+          "__id__": 2
+        },
+        "graphics": {
+          "__id__": 6
+        }
+      }
+    ],
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 720,
+      "height": 1280
+    },
+    "_position": {
+      "__type__": "cc.Vec3",
+      "x": 360,
+      "y": 640
+    },
+    "_id": "4d9QQZ/T9C/LB3/57OwwdY"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Main Camera",
+    "_parent": {
+      "__id__": 2
+    },
+    "_level": 1,
+    "_components": [
+      {
+        "__type__": "cc.Camera",
+        "node": {
+          "__id__": 3
+        },
+        "_clearFlags": 7,
+        "_depth": -1
+      }
+    ]
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Content",
+    "_parent": {
+      "__id__": 2
+    },
+    "_children": [
+      {
+        "__id__": 5
+      },
+      {
+        "__id__": 7
+      }
+    ],
+    "_level": 1,
+    "_components": [
+      {
+        "__type__": "ee105izEf1CdIQoxMLGJXEy",
+        "node": {
+          "__id__": 4
+        }
+      }
+    ],
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 720,
+      "height": 1280
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "GradientGraphics",
+    "_parent": {
+      "__id__": 4
+    },
+    "_level": 2,
+    "_components": [
+      {
+        "__type__": "cc.Widget",
+        "node": {
+          "__id__": 5
+        },
+        "_alignFlags": 45,
+        "_originalWidth": 40,
+        "_originalHeight": 36
+      },
+      {
+        "__id__": 6
+      }
+    ],
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 720,
+      "height": 1280
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2"
+    },
+    "_position": {
+      "__type__": "cc.Vec3",
+      "x": -360,
+      "y": -640
+    }
+  },
+  {
+    "__type__": "cc.Graphics",
+    "node": {
+      "__id__": 5
+    }
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "Label",
+    "_parent": {
+      "__id__": 4
+    },
+    "_level": 2,
+    "_components": [
+      {
+        "__type__": "cc.Label",
+        "node": {
+          "__id__": 7
+        },
+        "_useOriginalSize": false,
+        "_string": "已进入Cocos 场景",
+        "_N$string": "已进入Cocos 场景",
+        "_fontSize": 60,
+        "_lineHeight": 80,
+        "_N$horizontalAlign": 1,
+        "_N$verticalAlign": 1
+      }
+    ],
+    "_color": {
+      "__type__": "cc.Color"
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 486.74,
+      "height": 80
+    }
+  }
+]

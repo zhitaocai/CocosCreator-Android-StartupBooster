@@ -11,15 +11,19 @@ window._CCSettings = {
     rawAssets: {
         assets: {}
     },
-    launchScene: "db://assets/scenes/SloganSplashScene.fire",
+    launchScene: "db://assets/scenes/GradientBgSplashScene.fire",
     scenes: [
         {
-            url: "db://assets/scenes/SloganSplashScene.fire",
-            uuid: "6f96K4w2VGrYovFPSNF3m0"
+            url: "db://assets/scenes/GradientBgSplashScene.fire",
+            uuid: "b3XWLQ0+FIFLeNtuvqDcwM"
         },
         {
             url: "db://assets/scenes/ImageSplashScene.fire",
             uuid: "c6n7iFvWRNA64nkrRYAay1"
+        },
+        {
+            url: "db://assets/scenes/SloganSplashScene.fire",
+            uuid: "6f96K4w2VGrYovFPSNF3m0"
         },
         {
             url: "db://assets/scenes/BgSplashScene.fire",

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+	<!--矩形 渐变色作为背景色-->
+	<item >
+		<shape android:shape="rectangle" >
+			<gradient
+				android:angle="270"
+				android:endColor="@color/splash_gradient_bottom_bg"
+				android:startColor="@color/splash_gradient_top_bg"
+				/>
+		</shape >
+	</item >
+</layer-list >

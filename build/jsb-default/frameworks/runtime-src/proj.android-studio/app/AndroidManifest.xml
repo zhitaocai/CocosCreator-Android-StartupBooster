@@ -60,16 +60,36 @@
 		<!--</intent-filter >-->
 		<!--</activity >-->
 		
-		<!-- Slogan + 背景主题的 Activity -->
+		<!--&lt;!&ndash; Slogan + 背景主题的 Activity &ndash;&gt;-->
+		<!---->
+		<!--<activity-->
+		<!--android:name="org.cocos2dx.javascript.SloganSplashActivity"-->
+		<!--android:configChanges="orientation|keyboardHidden|screenSize"-->
+		<!--android:label="@string/app_name"-->
+		<!--android:launchMode="singleTask"-->
+		<!--android:screenOrientation="portrait"-->
+		<!--android:taskAffinity=""-->
+		<!--android:theme="@style/SloganSplashStyle"-->
+		<!--android:usesCleartextTraffic="true"-->
+		<!--tools:targetApi="m" >-->
+		<!--<intent-filter >-->
+		<!--<action android:name="android.intent.action.MAIN" />-->
+		<!--<action android:name="android.intent.action.VIEW" />-->
+		<!---->
+		<!--<category android:name="android.intent.category.LAUNCHER" />-->
+		<!--</intent-filter >-->
+		<!--</activity >-->
+		
+		<!-- 渐变色背景主题的 Activity -->
 		
 		<activity
-			android:name="org.cocos2dx.javascript.SloganSplashActivity"
+			android:name="org.cocos2dx.javascript.GradientBgSplashActivity"
 			android:configChanges="orientation|keyboardHidden|screenSize"
 			android:label="@string/app_name"
 			android:launchMode="singleTask"
 			android:screenOrientation="portrait"
 			android:taskAffinity=""
-			android:theme="@style/SloganSplashStyle"
+			android:theme="@style/GradientBgSplashStyle"
 			android:usesCleartextTraffic="true"
 			tools:targetApi="m" >
 			<intent-filter >

@@ -28,6 +28,28 @@ window.__require = function e(t, n, r) {
   BackgroundAdapter: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "27aaaWThfxNB6G86bv/Zz/4", "BackgroundAdapter");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = Object.setPrototypeOf || {
+        __proto__: []
+      } instanceof Array && function(d, b) {
+        d.__proto__ = b;
+      } || function(d, b) {
+        for (var p in b) b.hasOwnProperty(p) && (d[p] = b[p]);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
     Object.defineProperty(exports, "__esModule", {
       value: true
     });
@@ -102,6 +124,28 @@ window.__require = function e(t, n, r) {
   ContentAdapter: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "ee105izEf1CdIQoxMLGJXEy", "ContentAdapter");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = Object.setPrototypeOf || {
+        __proto__: []
+      } instanceof Array && function(d, b) {
+        d.__proto__ = b;
+      } || function(d, b) {
+        for (var p in b) b.hasOwnProperty(p) && (d[p] = b[p]);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
     Object.defineProperty(exports, "__esModule", {
       value: true
     });
@@ -122,6 +166,87 @@ window.__require = function e(t, n, r) {
       return ContentAdapter;
     }(cc.Component);
     exports.default = ContentAdapter;
+    cc._RF.pop();
+  }, {} ],
+  GradientBgSplashScene: [ function(require, module, exports) {
+    "use strict";
+    cc._RF.push(module, "87a06WCortNdLFsI+MKQcgJ", "GradientBgSplashScene");
+    "use strict";
+    var __extends = this && this.__extends || function() {
+      var extendStatics = Object.setPrototypeOf || {
+        __proto__: []
+      } instanceof Array && function(d, b) {
+        d.__proto__ = b;
+      } || function(d, b) {
+        for (var p in b) b.hasOwnProperty(p) && (d[p] = b[p]);
+      };
+      return function(d, b) {
+        extendStatics(d, b);
+        function __() {
+          this.constructor = d;
+        }
+        d.prototype = null === b ? Object.create(b) : (__.prototype = b.prototype, new __());
+      };
+    }();
+    var __decorate = this && this.__decorate || function(decorators, target, key, desc) {
+      var c = arguments.length, r = c < 3 ? target : null === desc ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+      if ("object" === typeof Reflect && "function" === typeof Reflect.decorate) r = Reflect.decorate(decorators, target, key, desc); else for (var i = decorators.length - 1; i >= 0; i--) (d = decorators[i]) && (r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r);
+      return c > 3 && r && Object.defineProperty(target, key, r), r;
+    };
+    Object.defineProperty(exports, "__esModule", {
+      value: true
+    });
+    var _a = cc._decorator, ccclass = _a.ccclass, property = _a.property;
+    var BgSplashSceneCtrl = function(_super) {
+      __extends(BgSplashSceneCtrl, _super);
+      function BgSplashSceneCtrl() {
+        var _this = null !== _super && _super.apply(this, arguments) || this;
+        _this.graphics = null;
+        _this.topColor = cc.Color.WHITE;
+        _this.bottomColor = cc.Color.RED;
+        return _this;
+      }
+      BgSplashSceneCtrl.prototype.onLoad = function() {
+        var widget = this.graphics.getComponent(cc.Widget);
+        widget && widget.updateAlignment();
+        this.drawGradientBg();
+      };
+      BgSplashSceneCtrl.prototype.drawGradientBg = function() {
+        var bottomColorR = this.bottomColor.getR() * (this.bottomColor.getA() / 255);
+        var bottomColorG = this.bottomColor.getG() * (this.bottomColor.getA() / 255);
+        var bottomColorB = this.bottomColor.getB() * (this.bottomColor.getA() / 255);
+        var topColorR = this.topColor.getR() * (this.topColor.getA() / 255);
+        var topColorG = this.topColor.getG() * (this.topColor.getA() / 255);
+        var topColorB = this.topColor.getB() * (this.topColor.getA() / 255);
+        for (var curYPosition = 0; curYPosition < this.graphics.node.height; curYPosition++) {
+          var bottomColorPercent = (this.graphics.node.height - curYPosition) / this.graphics.node.height;
+          var topColorPercent = curYPosition / this.graphics.node.height;
+          this.graphics.strokeColor = cc.color(Math.round(bottomColorR * bottomColorPercent + topColorR * topColorPercent), Math.round(bottomColorG * bottomColorPercent + topColorG * topColorPercent), Math.round(bottomColorB * bottomColorPercent + topColorB * topColorPercent));
+          this.graphics.moveTo(0, curYPosition);
+          this.graphics.lineTo(this.graphics.node.width, curYPosition);
+          this.graphics.stroke();
+        }
+      };
+      BgSplashSceneCtrl.prototype.start = function() {
+        var _this = this;
+        this.scheduleOnce(function() {
+          _this._hideNativeSplash();
+        }, 1);
+      };
+      BgSplashSceneCtrl.prototype._hideNativeSplash = function() {
+        true;
+        cc.sys.os == cc.sys.OS_ANDROID && jsb.reflection.callStaticMethod("org/cocos2dx/javascript/GradientBgSplashActivity", "hideSplash", "()V");
+      };
+      __decorate([ property({
+        type: cc.Graphics,
+        tooltip: "\u4ec5\u652f\u6301\u4ece\u4e0a\u4e0b\u5e73\u884c\u6e10\u53d8\u7ed8\u56fe\u7ec4\u4ef6"
+      }) ], BgSplashSceneCtrl.prototype, "graphics", void 0);
+      __decorate([ property(cc.Color) ], BgSplashSceneCtrl.prototype, "topColor", void 0);
+      __decorate([ property(cc.Color) ], BgSplashSceneCtrl.prototype, "bottomColor", void 0);
+      BgSplashSceneCtrl = __decorate([ ccclass ], BgSplashSceneCtrl);
+      return BgSplashSceneCtrl;
+    }(cc.Component);
+    exports.default = BgSplashSceneCtrl;
     cc._RF.pop();
   }, {} ],
   ImageSplashSceneCtrl: [ function(require, module, exports) {
@@ -260,4 +385,4 @@ window.__require = function e(t, n, r) {
     exports.default = SloganSplashSceneCtrl;
     cc._RF.pop();
   }, {} ]
-}, {}, [ "BgSplashSceneCtrl", "ImageSplashSceneCtrl", "SloganSplashSceneCtrl", "BackgroundAdapter", "ContentAdapter" ]);
+}, {}, [ "BgSplashSceneCtrl", "GradientBgSplashScene", "ImageSplashSceneCtrl", "SloganSplashSceneCtrl", "BackgroundAdapter", "ContentAdapter" ]);

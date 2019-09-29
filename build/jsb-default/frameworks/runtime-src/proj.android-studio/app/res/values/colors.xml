@@ -2,4 +2,6 @@
 <resources >
 	<color name="splash_bg" >#DA8020</color >
 	<color name="splash_slogan_bg" >#FFCC00</color >
+	<color name="splash_gradient_top_bg" >#FFFFFF</color >
+	<color name="splash_gradient_bottom_bg" >#FF0000</color >
 </resources >
