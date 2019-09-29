@@ -1,6 +1,6 @@
 # Cocos Creator Android 启动黑屏优化示例项目
 
-[![](https://img.shields.io/badge/Release-0.3.0-green.svg)](CHANGELOG.md)
+[![](https://img.shields.io/badge/Release-0.4.0-green.svg)](CHANGELOG.md)
 [![](https://img.shields.io/badge/Cocos%20Creator-2.0.10.p1-orange.svg)](http://www.cocos.com/creator)
 
 ## 1. 优化前效果
